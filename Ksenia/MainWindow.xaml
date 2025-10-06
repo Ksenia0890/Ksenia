@@ -1,0 +1,28 @@
+﻿<Window x:Class="Ksenia.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Ksenia"
+        mc:Ignorable="d"
+       Title="Hotel Management" Height="450" Width="800">
+    <Grid>
+        <TabControl>
+            <TabItem Header="Payments">
+                <DataGrid x:Name="PaymentsDataGrid" AutoGenerateColumns="True"/>
+            </TabItem>
+            <TabItem Header="Services">
+                <DataGrid x:Name="ServicesDataGrid" AutoGenerateColumns="True"/>
+            </TabItem>
+            <TabItem Header="Employees">
+                <DataGrid x:Name="EmployeesDataGrid" AutoGenerateColumns="True"/>
+            </TabItem>
+            <TabItem Header="Guests">
+                <DataGrid x:Name="GuestsDataGrid" AutoGenerateColumns="True"/>
+            </TabItem>
+            <TabItem Header="Reservations">
+                <DataGrid x:Name="ReservationsDataGrid" AutoGenerateColumns="True"/>
+            </TabItem>
+        </TabControl>
+    </Grid>
+</Window>
